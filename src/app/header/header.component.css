@@ -1,0 +1,13 @@
+.top_banner{
+    width: 300px;
+    height: 115px;
+    background-color: #CC0000;
+    padding: 20px;
+    color: #FFFFFF;
+}
+.top_banner .js_framework{
+    font-size: 14px;
+}
+.top_banner .heading{
+    font-size: 28px;
+}

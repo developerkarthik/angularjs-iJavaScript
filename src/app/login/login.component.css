@@ -1,0 +1,32 @@
+.login{
+    width: 760px;
+}
+.loginForm{
+    background-color: #CC0000;
+    padding: 20px;
+}
+.loginForm .errorMsg{
+    font-style: italic;
+    color: #FFFFFF;
+    padding: 15px;
+    background-color: #e06e6e;
+}
+.loginForm .form-group{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    align-items: center;
+}
+.loginForm .form-group label{
+    margin-bottom: 0px;
+    color: #FFFFFF;
+    font-weight: normal;
+    width: 80px;
+}
+.loginForm .form-group input{
+    padding: 5px;
+}
+.loginForm .btn-container{
+    display: flex;
+    justify-content: flex-end;
+}
