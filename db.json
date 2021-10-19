@@ -1,0 +1,50 @@
+{
+  "auth": [
+      {
+          "cust_id": "IJ101",
+          "password": "Password@123"
+      },
+      {
+          "cust_id": "IJ102",
+          "password": "Password@123"
+      }
+  ],
+  "customers": [
+      {
+          "id": "IJ101",
+          "name": "Tom Jha",
+          "last_login": "19-10-2021",
+          "balance": "$3000",
+          "transcation": [
+              {
+                  "date": "12-10-2021",
+                  "desc": "Room Rent",
+                  "amount": "$700"
+              },
+              {
+                  "date": "16-10-2021",
+                  "desc": "Morrision",
+                  "amount": "$40"
+              }
+          ]
+      },
+      {
+        "id": "IJ102",
+        "name": "Tonny",
+        "last_login": "17-10-2021",
+        "balance": "$1000",
+        "transcation": [
+            {
+                "date": "10-10-2021",
+                "desc": "Room Rent",
+                "amount": "$500"
+            },
+            {
+                "date": "12-10-2021",
+                "desc": "Morrision",
+                "amount": "$20"
+            }
+        ]
+    }
+  ]    
+}

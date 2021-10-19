@@ -1,0 +1,10 @@
+.form-group{
+    margin: 0px;
+}
+.form-group label{
+    padding-left: 10px;
+    font-weight: normal;
+}
+.buttonContainer{
+    margin-top: 15px;
+}

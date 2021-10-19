@@ -15,6 +15,8 @@ import { BindingSectionComponent } from './dashboard/binding-section/binding-sec
 import { ButtonComponent } from './global/button/button.component';
 import { DialogModalComponent } from './global/dialog-modal/dialog-modal.component';
 import { appRoutingModule } from './approuting.module';
+import { ReusableComponent } from './global/reusable/reusable.component';
+import { TeamListComponent } from './team/team-list/team-list.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { appRoutingModule } from './approuting.module';
     SubscribeSectionComponent,
     BindingSectionComponent,
     ButtonComponent,
-    DialogModalComponent
+    DialogModalComponent,
+    ReusableComponent,
+    TeamListComponent
   ],
   imports: [
     BrowserModule,

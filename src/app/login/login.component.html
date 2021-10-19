@@ -13,7 +13,9 @@
                 <input type="password" name="password" id="password" placeholder="Password">
             </div>
             <div class="btn-container">
-                <app-button></app-button>
+                <app-button [buttonType]="'button'" 
+                    [btnClass]="'btn-default'" 
+                    [buttonText]="'Login'"></app-button>
             </div>
         </form>
     </div>

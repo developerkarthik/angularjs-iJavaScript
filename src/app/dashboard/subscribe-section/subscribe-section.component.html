@@ -1,1 +1,24 @@
-<p>subscribe-section works!</p>
+<div class="row subscribeSection">
+    <div class="col-xs-12">
+        <div class="innerContent">
+            <h4>Subscribe to Alerts</h4>
+            <form>
+                <div class="form-group">
+                    <input type="checkbox" name="subcribe" id="sms">
+                    <label>SMS Alert</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="subcribe" id="newsletter">
+                    <label>Marketting Newsletter</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="subcribe" id="flyers">
+                    <label>Flyers</label>
+                </div>
+                <div class="buttonContainer">
+                    <app-button [buttonType]="'submit'" [btnClass]="'btn-blue'" [buttonText]="'Submit'"></app-button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

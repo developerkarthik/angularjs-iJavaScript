@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url('assets/images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #666666;
+}
+.container{
+    width: 970px;
+    margin: 50px auto;
+}
+.mainContent .left, .mainContent .right{
+    background: #FFFFFF;
+    padding: 20px;
+}
+.mainContent .col-md-3{
+    width: 31%;
+}
+.mainContent .col-md-9{
+    width: 69%;
+}
+h4{
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 15px;
+}

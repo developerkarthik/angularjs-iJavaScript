@@ -3,5 +3,11 @@
     border-color: #775900;
     color: #FFFFFF;
     border-radius: 5px;
-    padding: 5px 20px 3 20px;
+    padding: 5px 20px 3px 20px;
+}
+.btn-blue{
+    background-color: #169BD5;
+    color: #FFFFFF;
+    border-radius: 5px;
+    padding: 5px 10px 3px 10px;
 }
