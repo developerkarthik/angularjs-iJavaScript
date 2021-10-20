@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -17,6 +18,9 @@ import { DialogModalComponent } from './global/dialog-modal/dialog-modal.compone
 import { appRoutingModule } from './approuting.module';
 import { ReusableComponent } from './global/reusable/reusable.component';
 import { TeamListComponent } from './team/team-list/team-list.component';
+import { AuthGuard } from './services/auth.guard';
+import { AuthServices } from './services/auth.services';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -38,9 +42,11 @@ import { TeamListComponent } from './team/team-list/team-list.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    ReactiveFormsModule,
     appRoutingModule
   ],
-  providers: [],
+  providers: [AuthGuard, AuthServices],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

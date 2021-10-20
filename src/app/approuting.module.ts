@@ -4,6 +4,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { AboutComponent } from "./about/about.component";
 import { DashboardComponent } from "./dashboard/dashboard.component";
 import { LoginComponent } from "./login/login.component";
+import { AuthGuard } from "./services/auth.guard";
 import { TeamComponent } from "./team/team.component";
 
 const routes: Routes = [
@@ -13,15 +14,18 @@ const routes: Routes = [
     },
     {
         path:'dashboard',
-        component: DashboardComponent
+        component: DashboardComponent,
+        canActivate: [AuthGuard]
     },
     {
         path: 'about',
-        component: AboutComponent
+        component: AboutComponent,
+        canActivate: [AuthGuard]
     },
     {
         path: 'team',
-        component: TeamComponent
+        component: TeamComponent,
+        canActivate: [AuthGuard]
     }
 
 ]
