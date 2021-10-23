@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Transcation } from 'src/app/model/transcation.model';
 
 @Component({
   selector: 'app-balance-section',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./balance-section.component.css']
 })
 export class BalanceSectionComponent implements OnInit {
+
+  @Input() balance: any;
+  @Input() transcation: Transcation[];
 
   constructor() { }
 

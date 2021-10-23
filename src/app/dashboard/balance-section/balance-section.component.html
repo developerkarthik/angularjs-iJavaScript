@@ -1,7 +1,7 @@
 <div class="row balanceSection">
     <div class="col-xs-12">
         <div class="innerContent">
-            <h3>Account Balance: 3000$</h3>
+            <h3>Account Balance: {{balance}}</h3>
             <table class="table table-bordered">
                 <thead>
                     <tr>
@@ -11,15 +11,15 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr *ngFor="let tnsc of transcation">
                         <td>
-                            01-Feb-2018
+                            {{ tnsc.date }}
                         </td>
                         <td>
-                            Room Rent
+                            {{ tnsc.desc }}
                         </td>
                         <td>
-                            700
+                            {{ tnsc.amount }}
                         </td>
                     </tr>
                 </tbody>

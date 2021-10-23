@@ -5,9 +5,16 @@
         </div>
     </div>
     <div class="col-md-9 col-xs-12">
-        <div class="right">
-            <app-welcome-section></app-welcome-section>
-            <app-balance-section></app-balance-section>
+        <div class="right" *ngIf="customerData">
+            <app-welcome-section
+                [name]="customerData.name"
+                [last_login]="customerData.last_login"
+                >
+            </app-welcome-section>
+            <app-balance-section 
+                [balance]="customerData.balance" 
+                [transcation]="customerData.transcation">
+            </app-balance-section>
             <div class="row">
                 <div class="col-sm-6">
                     <app-subscribe-section></app-subscribe-section>
