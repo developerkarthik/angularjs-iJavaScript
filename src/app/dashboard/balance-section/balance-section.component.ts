@@ -8,8 +8,8 @@ import { Transcation } from 'src/app/model/transcation.model';
 })
 export class BalanceSectionComponent implements OnInit {
 
-  @Input() balance: any;
-  @Input() transcation: Transcation[];
+  @Input() balance !: string;
+  @Input() transcation !: Transcation[];
 
   constructor() { }
 

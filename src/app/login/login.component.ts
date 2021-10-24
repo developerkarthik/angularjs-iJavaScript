@@ -9,6 +9,7 @@ import { AuthServices } from '../services/auth.services';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  spinner: boolean = false;
   btnClicked: boolean = false;
   isValid: boolean = false;
   signinForm  = new FormGroup({
@@ -36,7 +37,6 @@ export class LoginComponent implements OnInit {
         if(data.isUserAuthenticated){
           this.router.navigate(['/dashboard']);
         }else{
-          this.btnClicked = true;
           this.isValid = false;
         }
       });

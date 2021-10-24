@@ -3,8 +3,10 @@
         <div class="innerContent">
             <h4>Tow Way Data Binding</h4>
             <div class="form-group">
-                <input type="text" name="binding" placeholder="Enter value for two way binding" />
+                <input type="text" name="binding" placeholder="Enter value for two way binding" 
+                [(ngModel)]="binding"/>
             </div>
+            <p>{{ binding }}</p>
         </div>
     </div>
 </div>

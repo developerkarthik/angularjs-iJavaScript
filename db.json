@@ -13,37 +13,47 @@
       {
           "id": "IJ101",
           "name": "Tom Jha",
-          "last_login": "19-10-2021",
+          "last_login": "2021-10-19",
           "balance": "$3000",
           "transcation": [
               {
-                  "date": "12-10-2021",
+                  "date": "2021-10-21",
                   "desc": "Room Rent",
                   "amount": "$700"
               },
               {
-                  "date": "16-10-2021",
+                  "date": "2021-10-16",
                   "desc": "Morrision",
                   "amount": "$40"
               }
+          ],
+          "teams": [
+            { "name" : "Member 1" },
+            { "name" : "Member 2" },
+            { "name" : "Member 3" } 
           ]
       },
       {
         "id": "IJ102",
         "name": "Tonny",
-        "last_login": "17-10-2021",
+        "last_login": "2021-10-17",
         "balance": "$1000",
         "transcation": [
             {
-                "date": "10-10-2021",
+                "date": "2021-10-10",
                 "desc": "Room Rent",
                 "amount": "$500"
             },
             {
-                "date": "12-10-2021",
+                "date": "2021-10-12",
                 "desc": "Morrision",
                 "amount": "$20"
             }
+        ],
+        "teams": [
+          { "name" : "Member 4" },
+          { "name" : "Member 5" },
+          { "name" : "Member 6" } 
         ]
     }
   ]    

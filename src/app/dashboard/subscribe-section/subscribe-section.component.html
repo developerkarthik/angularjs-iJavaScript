@@ -2,18 +2,24 @@
     <div class="col-xs-12">
         <div class="innerContent">
             <h4>Subscribe to Alerts</h4>
-            <form>
-                <div class="form-group">
-                    <input type="checkbox" name="subcribe" id="sms">
-                    <label>SMS Alert</label>
-                </div>
-                <div class="form-group">
-                    <input type="checkbox" name="subcribe" id="newsletter">
-                    <label>Marketting Newsletter</label>
-                </div>
-                <div class="form-group">
-                    <input type="checkbox" name="subcribe" id="flyers">
-                    <label>Flyers</label>
+            <form [formGroup]="sForm" (ngSubmit)="subscribe()">
+                <div formArrayName="subscribe">
+                    <div *ngFor="let subscribe of sForm.get('subscribe')['controls']; let i = index">
+                        <div [formGroupName]="i">
+                            <div class="form-group">
+                                <input type="checkbox" formControlName="sms" id="sms">
+                                <label for="sms">SMS Alert</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" formControlName="newsletter" id="newsletter">
+                                <label for="newsletter">Marketting Newsletter</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" formControlName="flyers" id="flyers">
+                                <label for="flyers">Flyers</label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="buttonContainer">
                     <app-button [buttonType]="'submit'" [btnClass]="'btn-blue'" [buttonText]="'Submit'"></app-button>
@@ -21,4 +27,7 @@
             </form>
         </div>
     </div>
+</div>
+<div *ngIf="model">
+    <app-dialog-modal [subscribeValue]="subscribes" [model]="model" (modalClosed)="modalClose()"></app-dialog-modal>
 </div>

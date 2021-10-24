@@ -16,4 +16,12 @@ export class CustomerServices{
             })
         );
     }
+    getTeamsById(cust_id: string){
+        var api_url = this.clientUrl+'customers?id='+cust_id;
+        return this.http.get<Customer[]>(api_url).pipe(
+            map(data => {
+                return data[0].teams;
+            })
+        )
+    }
 }

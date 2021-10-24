@@ -8,6 +8,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     color: #666666;
+    font-size: 16px;
 }
 .container{
     width: 970px;
@@ -17,14 +18,34 @@ body{
     background: #FFFFFF;
     padding: 20px;
 }
-.mainContent .col-md-3{
+.mainContent .col-lg-3{
     width: 31%;
 }
-.mainContent .col-md-9{
+.mainContent .col-lg-9{
     width: 69%;
+}
+h2{
+    font-weight: bold;
 }
 h4{
     color: #000000;
     font-size: 24px;
     margin-bottom: 15px;
+}
+@media (max-width: 991px){
+    .container{
+        width: 100%;
+        margin: 20px auto;
+    }
+    .mainContent .col-lg-3{
+        width: 100%;
+    }
+    .mainContent .col-lg-9{
+        width: 100%;
+    }  
+    .mainContent .left{
+        margin: 20px 0px;
+        padding: 0px;
+        background: #D7D7D7;
+    }
 }

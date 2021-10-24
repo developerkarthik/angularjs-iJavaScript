@@ -17,3 +17,18 @@ ul li a{
 ul li a:hover,ul li a.active{
     color: #666666;
 }
+@media (max-width: 991px){
+    ul{
+        flex-direction: row;
+    }
+    ul li a{
+        padding: 10px 20px;
+        border: none;
+    }
+}
+@media (max-width: 767px){
+    ul li a{
+        padding: 10px;
+        font-size: 18px;
+    }
+}

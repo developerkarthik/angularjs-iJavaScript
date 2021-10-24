@@ -12,3 +12,8 @@
 .top_banner .heading{
     font-size: 28px;
 }
+@media (max-width: 767px){
+    .col-md-3{
+        width: 100%;
+    }
+}

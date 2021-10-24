@@ -20,7 +20,8 @@ import { ReusableComponent } from './global/reusable/reusable.component';
 import { TeamListComponent } from './team/team-list/team-list.component';
 import { AuthGuard } from './services/auth.guard';
 import { AuthServices } from './services/auth.services';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CustomerServices } from './services/customer.services';
 
 @NgModule({
   declarations: [
@@ -42,11 +43,12 @@ import { ReactiveFormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
     appRoutingModule
   ],
-  providers: [AuthGuard, AuthServices],
+  providers: [AuthGuard, AuthServices, CustomerServices],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

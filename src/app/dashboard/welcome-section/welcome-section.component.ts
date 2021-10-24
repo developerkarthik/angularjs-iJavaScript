@@ -7,9 +7,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class WelcomeSectionComponent implements OnInit {
 
-  @Input() name : string;
-  @Input() last_login : string;
-  
+  @Input() name !: string;
+  @Input() last_login !: string;
+
   constructor() { }
 
   ngOnInit(): void {

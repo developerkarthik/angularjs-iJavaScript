@@ -30,3 +30,13 @@
     display: flex;
     justify-content: flex-end;
 }
+
+@media (max-width: 767px){
+    .loginForm .form-group{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .loginForm .form-group input{
+        width: 100%;
+    }
+}

@@ -1,4 +1,4 @@
-<li>
-    <img src="assets/images/profile.png" width="50" height="50"/>
-    <span class="name">Employee name</span>
+<li *ngFor="let team of teamsData" class="teamList">
+    <img src="assets/images/profile.png" width="50" height="50" alt="{{ team.name }}"/>
+    <span class="name">{{ team.name }}</span>
 </li>
